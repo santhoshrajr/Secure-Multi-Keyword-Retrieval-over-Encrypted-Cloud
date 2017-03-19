@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 140px;
+        }
+        .style2
+        {
+            width: 229px;
+        }
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+  
+        <asp:Panel ID="Panel1" runat="server" BackColor="#36B0B6" 
+            BackImageUrl="~/images (1).jpg" Height="132px" >
+          
+            <table class="style1">
+                <tr>
+                    <td class="style2">
+                        <asp:Image ID="Image1" runat="server" Height="113px" Width="309px" 
+                            ImageUrl="~/key.jpg" />
+                    </td>
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White" 
+                            style="font-size: 34px; color: #FFFFFF; font-weight: 700; font-style: italic;" 
+                            
+                            Text="Toward secure multi keyword top-k retrivel  over  encrypted cloud data "></asp:Label>
+                    </td>
+                </tr>
+            </table>
+           <br /><center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </center>
+            <br />
+        </asp:Panel><br />
+      
+     <div id='cssmenu'>
+<ul>
+   <li class='active'><a href='homepage.aspx'><span>Home</span></a></li>
+   <li><a href='adminlogin.aspx'><span>AdminLogin</span></a></li>
+   <li><a href='userlogin.aspx'><span>UserLogin</span></a></li>
+   <li><a href='registartion.aspx'><span>Registration</span></a></li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+  
+       
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

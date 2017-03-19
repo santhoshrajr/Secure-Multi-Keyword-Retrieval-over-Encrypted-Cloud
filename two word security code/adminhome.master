@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminhome.master.cs" Inherits="adminhome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <asp:Panel ID="Panel1" runat="server" BackColor="#36B0B6" 
+            BackImageUrl="~/images (1).jpg" Height="132px" >
+          
+            <table class="style1">
+                <tr>
+                    <td class="style2">
+                        <asp:Image ID="Image1" runat="server" Height="113px" Width="309px" 
+                            ImageUrl="~/key.jpg" />
+                    </td>
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White" 
+                            style="font-size: 34px; color: #FFFFFF; font-weight: 700; font-style: italic;" 
+                            
+                            Text="Toward secure multi keyword top-k retrivel  over  encrypted cloud data "></asp:Label>
+                    </td>
+                </tr>
+            </table>
+           <br /><center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </center>
+            <br />
+        </asp:Panel><br />
+      
+     <div id='cssmenu'>
+<ul>
+   <li class='adminhomepage.aspx'><a href='homepage.aspx'><span>Home</span></a></li>
+   <li><a href='adminchangepwd.aspx'><span>ChangePassword</span></a></li>
+   <li><a href='uploadfile.aspx'><span>UploadFile</span></a></li>
+   <li><a href='viewfile.aspx'><span>View</span></a></li>
+   <li class='last'><a href='homepage.aspx'><span>Logout</span></a></li>
+</ul>
+</div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+ private string EncodePasswordToBase64(string s)
+    {
+        con.Open();
+        SqlCommand cmd4 = new SqlCommand("select pinno from reg where username='" + uname.Text + "'", con);
+       int i = (int)cmd4.ExecuteScalar();
+
+        s = i.ToString();
+       // sr2 = s;
+        con.Close();
+        try
+        {
+            byte[] encData_byte = new byte[s.Length];
+            encData_byte = System.Text.Encoding.UTF8.GetBytes(s);
+             encodedData = Convert.ToBase64String(encData_byte);
+            return encodedData;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error in base64Encode" + ex.Message);
+        }
+        
+    }
+    public string encodedData;
